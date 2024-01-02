@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Proza+Libre:wght@700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  background-color: #dde4e9;
+}
+
+h1 {
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 2.1em;
+  }
+
+html,
+body {
+  height: 100%;
+  color: var(--font-color);
+}
+
+p {
+    text-align: left;
+    margin-right: 375px;
+}
+
+:root {
+  --spacing-1: 8px;
+  --spacing-2: 12px;
+  --spacing-3: 16px;
+  --spacing-4: 24px;
+
+  --border-radius: 12px;
+
+  --font-color: #323232;
+}
+
+
+h2 {
+  font-family: "Proza Libre", sans-serif;
+  margin: 0;
+  margin-bottom: var(--spacing-2);
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0 var(--spacing-3);
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes up at least the viewport height */
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-3) 0;
+}
+
+.navigation-items {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  align-items: center;
+  margin: 0;
+  margin-right: auto;
+}
+
+.navigation-item {
+  margin: var(--spacing-1);
+}
+
+.portrait {
+    width: 500px;
+    border-radius: var(--border-radius);
+    flex-shrink: 0;
+    margin-right: 70px;
+    margin-bottom: 50px;
+  }
+  
+  img {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60%; /* Increase this value to make the image larger */
+}
+  
+  .portrait-frame {
+    float: right;
+    margin-left: 20px;
+    width: 45%;
+  }
+  
+
+  .about-me-container {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: var(--spacing-4); /* Adjust spacing as needed */
+  }
+
+.about-me-text-container {
+  margin-right: var(var(--spacing-3));
+}
+
+.project-image {
+  width: 50%;
+}
+
+.project-title h3 {
+  display: inline;
+}
+
+details {
+  cursor: pointer;
+}
+
+summary {
+  list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg);
+}
+
+.main-container {
+    position: relative;
+    min-height: 100vh; /* Ensure it takes at least the height of the viewport */
+    padding-bottom: 100px; /* Space for the footer */
+}
+
+.footer p {
+    position: center;
+    width: 100%; /* Ensure it stretches across the screen */
+    text-align: center; /* Center text inside the footer */
+    bottom: 0;
+    left: 0;
+    position: center;
+}
+
+section {
+  padding: var(--spacing-3) 0;
+}
+
+.icon {
+  font-size: 5em;
+  color: var(--font-color);
+  margin: 0 var(--spacing-1);
+}
+
+a {
+  color: var(--font-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#logo {
+  margin: 0;
+}
+
+#skills-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#skills-container > * {
+  font-size: 2em;
+  width: 2em;
+  margin-top: var(--spacing-1);
+}
+
+@media only screen and (max-width: 600px) {
+  .about-me-container {
+    flex-direction: column;
+  }
+}
+
+.contact-icons {
+    font-size: 1.5em;
+}
+
+.skills {
+    font-size: 1.5em;
+}
